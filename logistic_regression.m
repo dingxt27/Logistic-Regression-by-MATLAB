@@ -2,13 +2,6 @@ clc
 clear all;
 
 data = dlmread('crabdata.txt');
-% data = dlmread('data_banknote_authentication.txt');
-
-
-% data_norm = zeros(size(data,1),size(data,2));
-% for k =1:size(data,2)
-%     data_norm(:,k) = (data(:,k)-mean(data(:,k)))./std(data(:,k));
-% end
 
 num = size(data,1)*0.75;
 k = randperm(size(data,1),num);
